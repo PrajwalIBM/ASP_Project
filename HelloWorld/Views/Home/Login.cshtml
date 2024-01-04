@@ -1,0 +1,34 @@
+﻿@{
+    ViewData["Title"] = "Login Page";
+}
+
+<div>
+    <nav>
+        <h4>Life Oragnics</h4>
+        <div class="submenu">
+            <ul>
+                <li><a href="./store.html">Store</a></li>
+                <li><a href="./vegetables.html">Vegetables</a></li>
+                <li><a href="./fruits.html">Fruits</a></li>
+            </ul>
+            <div class="user_avatar"></div>
+        </div>
+    </nav>
+
+    <div class="login">
+        <div class="col">
+            @using (Html.BeginForm("Login", "Login", FormMethod.Post))
+            {
+                <form action="" method="post" class="form">
+                    <input type="text" name="username" id="username" placeholder="username" class="username">
+                    <input type="password" name="password" id="password" placeholder="password" class="password">
+                    <input type="submit" value="submit" class="submit_button">
+                </form>
+            }
+        </div>
+    </div>
+    <footer>
+        <a href="#">BluePrism</a>
+        <a href="#">Version 1.0</a>
+    </footer>
+</div>

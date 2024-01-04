@@ -1,0 +1,93 @@
+﻿@model HelloWorld.Models.User
+@{
+    ViewData["Title"] = "Store Page";
+}
+<div class="store">
+    <h1>VEGETABLES & FRUITS</h1>
+    @* <h3>Welcome @{string username = ViewData["Username"] as string;}</h3> *@
+    <h4>Welcome @Model.username</h4>
+    <div class="storeItems">
+        <div class="card">
+            <div class="image">
+                <img src="@Url.Content("~/lib/assets/tomato.webp")" alt="product image">
+            </div>
+            <div class="info">
+                <h3>Tomato</h3>
+                <p>price: 00/kg</p>
+                <a href="#" class="add-to-cart" data-product="Tomato">Add to Cart</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="image">
+                <img src="@Url.Content("~/lib/assets/potato.webp")" alt="product image">
+            </div>
+            <div class="info">
+                <h3>Potato</h3>
+                <p>price: 00/kg</p>
+                <a href="#" class="add-to-cart" data-product="Potato">Add to Cart</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="image">
+                <img src="@Url.Content("~/lib/assets/cauliflower.webp")" alt="product image">
+            </div>
+            <div class="info">
+                <h3>Cauliflower</h3>
+                <p>price: 00/kg</p>
+                <a href="#" class="add-to-cart" data-product="Cauliflower">Add to Cart</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="image">
+                <img src="@Url.Content("~/lib/assets/banana.webp")" alt="product image">
+            </div>
+            <div class="info">
+                <h3>Banana</h3>
+                <p>price: 00/kg</p>
+                <a href="#" class="add-to-cart" data-product="Banana">Add to Cart</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="image">
+                <a href="c:\users\prajwaldwivedi\source\repos\helloworld\views\shared\_validationscriptspartial.cshtml">c:\users\prajwaldwivedi\source\repos\helloworld\views\shared\_validationscriptspartial.cshtml</a>
+                <img src="@Url.Content("~/lib/assets/apple.webp")" alt="product image">
+            </div>
+            <div class="info">
+                <h3>Apple</h3>
+                <p>price: 00/kg</p>
+                <a href="#" class="add-to-cart" data-product="Apple">Add to Cart</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="image">
+                <img src="@Url.Content("~/lib/assets/avocado.webp")" alt="product image">
+            </div>
+            <div class="info">
+                <h3>Avocado</h3>
+                <p>price: 00/kg</p>
+                <a href="#" class="add-to-cart" data-product="Avocado">Add to Cart</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="image">
+                <img src="@Url.Content("~/lib/assets/blueberry.webp")" alt="product image">
+            </div>
+            <div class="info">
+                <h3>Blueberry</h3>
+                <p>price: 00/kg</p>
+                <a href="#" class="add-to-cart" data-product="Blueberry">Add to Cart</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="image">
+                <img src="@Url.Content("~/lib/assets/onion.webp")" alt="product image">
+            </div>
+            <div class="info">
+                <h3>Onion</h3>
+                <p>price: 00/kg</p>
+                <a href="#" class="add-to-cart" data-product="Onion">Add to Cart</a>
+            </div>
+        </div>
+    </div>
+
+</div>

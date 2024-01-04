@@ -1,0 +1,44 @@
+nav {
+    height: 20vh;
+    padding: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    // border-radius: 5px;
+    background-color: darkslategray;
+    color: white;
+
+    h4 {
+        font-size: 1.5rem;
+        font-weight: 400;
+    }
+
+    .submenu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        ul {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            list-style-type: none;
+            margin-right: 1rem;
+
+            li {
+                a {
+                    margin-left: 0.5rem;
+                    text-decoration: none;
+                    color: white;
+                }
+            }
+        }
+
+        .user_avatar {
+            height: 2.5rem;
+            width: 2.5rem;
+            border-radius: 100%;
+            background-color: lightgreen;
+        }
+    }
+}
