@@ -31,11 +31,11 @@ namespace HelloWorld.Controllers
         {
             return View();
         }
-        public IActionResult Store()
+        public IActionResult Store(User user)
         {
-            string username = TempData["Username"] as string;
-            string password = TempData["Password"] as string;
-            return View();
+/*            string username = TempData["Username"] as string;
+            string password = TempData["Password"] as string;*/
+            return View(user);
         }
 
         public IActionResult Cart()
